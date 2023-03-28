@@ -29,6 +29,10 @@ class Entry(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     # ForeignKey is a reference to another record in the database.
     # This is the code that connects each entry to a specific topic.
+
+    # on_delete=models.CASCADE argument tells Django that when a
+    # topic is deleted, all the entries associated with that topic
+    # should be deleted as well.
     text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
 
