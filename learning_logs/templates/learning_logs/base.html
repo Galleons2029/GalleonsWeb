@@ -1,6 +1,7 @@
 <p>
-    <a href="{% url 'learning_logs:index' %}">Learning Log</a>
+    <a href="{% url 'learning_logs:index' %}">Learning Log</a> -
     <!-- generates a URL matching the URL pattern defined in learning_logs/urls.py with the name 'index'. -->
+    <a href="{% url 'learning_logs:topics' %}">Topics</a>
 </p>
 
 {% block content %}{% endblock content %}
