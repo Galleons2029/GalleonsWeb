@@ -21,8 +21,6 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('', include('learning_logs.urls')),
 
-
-
 ]
 
 
